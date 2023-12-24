@@ -4,7 +4,7 @@ const {createCustomError} = require('../errors/custom-error');
 
 
 const getAllTasks = asyncWrapper(async (req, res) => {
-    const tasks = await Task.find({}); // find() is a static function from mongoose Models hello world my name is reza pourshariatiad n
+    const tasks = await Task.find({}); // find() is a static function from mongoose Models
     res.status(200).json({tasks});
 });
 
