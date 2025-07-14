@@ -3,7 +3,7 @@ const path = require('path');
 console.log(path.sep);
 console.log(path.delimiter);
 
-const filePath = path.join('/content/', 'subFolder', 'test.txt');
+const filePath = path.join('/content', 'subFolder', 'test.txt');
 console.log('3 >>> ', filePath);
 
 const base = path.basename(filePath); // returns only the target file.
