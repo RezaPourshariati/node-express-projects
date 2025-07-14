@@ -14,7 +14,7 @@ app.use(express.json()); // for incoming requests
 // routes
 app.use('/api/v1/tasks', tasksRouter); // middleware for router
 
-app.use(notFound); // for not-found pages
+app.use(notFound); // for not-found(404) pages
 app.use(errorHandlerMiddleware); // error handler
 
 
